@@ -3,7 +3,6 @@ import sys
 import settings
 
 # Try to mute and then load Tensorflow and Keras
-# Muting seems to not work lately on Linux in any way
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 stdin = sys.stdin
 sys.stdin = open(os.devnull, 'w')
